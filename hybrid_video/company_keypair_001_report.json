@@ -1,0 +1,9 @@
+{
+  "key_id": "company_keypair_001",
+  "algorithm": "ML-KEM-1024",
+  "public_key_file": "public.key",
+  "private_key_file": "private.key",
+  "public_key_size": 1568,
+  "private_key_size": 3168,
+  "created_at": 1759169290
+}
