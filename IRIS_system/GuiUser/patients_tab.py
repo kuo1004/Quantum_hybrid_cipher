@@ -13,7 +13,7 @@ from tkinter import messagebox
 
 # 樣式（從 config 載入；沒有就給預設）
 try:
-    from GuiUser.config import COLOR, FONT, PAD, GAP, Card, OutlineBtn
+    from .config import COLOR, FONT, PAD, GAP, Card, OutlineBtn
 except Exception:
     COLOR = {
         "bg": "#F5F7FB", "surface": "#FFFFFF", "surfacealt": "#EAEFF8",
@@ -37,7 +37,7 @@ except Exception:
                              fg_color="transparent", border_width=1, border_color=COLOR["primary"],
                              text_color=COLOR["primary"])
 
-from .database import connect_db
+from GuiUser.database import connect_db
 
 
 class PatientsTab:

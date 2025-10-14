@@ -10,7 +10,7 @@ import shutil # <--- 新增
 from PIL import Image, ImageDraw, ImageFont
 import customtkinter as ctk
 from tkinter import messagebox, filedialog
-from .database import connect_db
+from GuiUser.database import connect_db
 from .config import COLOR, FONT, Card, SolidBtn, OutlineBtn, PAD, GAP, can, IMAGEEXTS, VIDEOEXTS
 
 class UploadTab:
