@@ -73,7 +73,8 @@ pip install opencv-python Pillow customtkinter pydicom
 
 2.  `start_all_server.py`：啟動後端伺服器進行加密安全傳輸
 
-3.  登入:
+3.  登入
+
 預設帳號:
 - 醫師: `doctor1` / `123`
 - 放射師: `radiologist1` / `123` (無病人管理權限)
