@@ -3,8 +3,7 @@
 
 IRIS 是一個醫療放射影像整合平台，具備高安全性的影像管理與傳輸功能。
 
-- `main.py`：啟動使用者介面
-- `start_all_server.py`：啟動後端伺服器進行加密安全傳輸
+
 1. **DICOM 資料結構**
    - Patient Level: 病人資訊
    - Study Level: 檢查資訊
@@ -70,14 +69,9 @@ pip install opencv-python Pillow customtkinter pydicom
 
 ## 🚀 使用方式
 
-### 1. 啟動系統
-
-```bash
-python main.py
-```
-
-### 2. 登入
-
+- `main.py`：啟動使用者介面
+- `start_all_server.py`：啟動後端伺服器進行加密安全傳輸
+- 登入:
 預設帳號:
 - 醫師: `doctor1` / `123`
 - 放射師: `radiologist1` / `123` (無病人管理權限)
