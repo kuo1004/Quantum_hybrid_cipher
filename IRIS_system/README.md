@@ -3,7 +3,7 @@
 # IRIS Secure Transmission System
 
 IRIS 是一個以醫療影像安全傳輸為核心的系統，整合圖形化介面（GUI）、後端伺服器、CA 憑證管理與資料庫觀測平台。
-本系統採用多層加密與公開金鑰基礎建設（PKI）確保資料在醫療系統之間傳輸過程的機密性與完整性 。[^2]
+本系統採用多層加密與公開金鑰基礎建設（PKI）確保資料在醫療系統之間傳輸過程的機密性與完整性 。
 
 ***
 
@@ -19,7 +19,7 @@ IRIS 是一個以醫療影像安全傳輸為核心的系統，整合圖形化介
 python main.py
 ```
 
-此指令將開啟前端視覺化操作介面，用於醫療影像上傳與加密傳輸 。[^1]
+此指令將開啟前端視覺化操作介面，用於醫療影像上傳與加密傳輸 。
 
 ***
 
@@ -33,7 +33,7 @@ python main.py
 python start_all_server.py
 ```
 
-該指令會同時啟動主伺服器、傳輸監聽器與驗證模組，支援 TLS 加密連線 。[^9]
+該指令會同時啟動主伺服器、傳輸監聽器與驗證模組，支援 TLS 加密連線 。
 
 ***
 
@@ -60,7 +60,7 @@ python start_all_server.py
 openssl pkcs12 -export -out iris_cert.p12 -inkey private.key -in iris_cert.crt
 ```
 
-將私鑰與憑證打包成可用於伺服器端或前端的格式 。[^10]
+將私鑰與憑證打包成可用於伺服器端或前端的格式 。
 
 ***
 
@@ -75,7 +75,7 @@ openssl pkcs12 -export -out iris_cert.p12 -inkey private.key -in iris_cert.crt
 python test/data_viewer.py
 ```
 
-執行後會啟動觀測介面，用於檢視傳輸歷史與資料庫統計狀況 。[^2]
+執行後會啟動觀測介面，用於檢視傳輸歷史與資料庫統計狀況 。
 
 ***
 
