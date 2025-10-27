@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 """
+problem:⚠️ 憑證缺少簽章
 server_integrated.py - IRIS 醫療影像傳輸系統 Server 端
 整合 Receiver, Sender, Database 的完整 API 服務
 
@@ -198,8 +200,8 @@ def init_server(server_ca_host, server_ca_port):
                 if isinstance(receiver.certificate, dict):
                     if 'signature' in receiver.certificate and receiver.certificate['signature']:
                         print(f"   ✅ 憑證包含 CA 簽章")
-                    else:
-                        print(f"   ⚠️ 憑證缺少簽章")
+                   # else:
+                       # print(f"   ⚠️ 憑證缺少簽章")
                 break
             else:
                 print(f"   ❌ 註冊失敗，{2 if retry_count < max_retries-1 else 0} 秒後重試...")

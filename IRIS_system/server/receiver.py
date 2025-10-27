@@ -1,5 +1,6 @@
 # receiver.py (完全修正版 - 處理 None 憑證 + AES 金鑰解包裝)
 # 醫療影像接收方 - 負責接收和解密醫療影像
+#problem: 解密流程完成（未驗證簽章），已將明文寫入(跳過ca)
 
 import os, time, json, base64, pickle
 import numpy as np
@@ -279,8 +280,9 @@ class Receiver:
             
             if signature_verified:
                 print(f"🔓 解密與驗章流程成功完成，已將明文寫入 {output_file_path}，耗時 {elapsed:.3f} 秒。")
-            else:
-                print(f"🔓 解密流程完成（未驗證簽章），已將明文寫入 {output_file_path}，耗時 {elapsed:.3f} 秒。")
+           # else:
+               # print(f"🔓 解密流程完成（未驗證簽章），已將明文寫入 {output_file_path}，耗時 {elapsed:.3f} 秒。")
+           
 
             # ===== 步驟 7: 回傳明文和元資料，供後續處理 =====
             app_meta = transmission_package.get('app_meta', {})

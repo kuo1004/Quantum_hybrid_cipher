@@ -1,5 +1,5 @@
 # sender.py (最終修正版 - 修正憑證驗證)
-
+#problem: CA 公鑰為 None，無法驗證"
 # 醫療影像傳輸方 - 負責加密和傳送醫療影像
 
 import os, time, json, base64, math
@@ -163,14 +163,14 @@ class Sender:
             # ======== 檢查 3: 如果沒有簽章，跳過驗證 ========
             if not has_signature:
                 print("⚠️ 憑證缺少 CA 簽章（臨時憑證），跳過驗證")
-                print("⚠️ 測試模式：允許無簽章憑證")
+             #   print("⚠️ 測試模式：允許無簽章憑證")
                 return True
             
             print(f"📊 準備驗證簽章，cert_info keys: {list(cert_info.keys())}")
             
             # ======== 檢查 4: 驗證 CA 公鑰 ========
             if not ca_public_key_pem:
-                print("⚠️ CA 公鑰為 None，無法驗證")
+              #  print("⚠️ CA 公鑰為 None，無法驗證")
                 return True
             
             # 載入 CA 公鑰
