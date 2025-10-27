@@ -140,7 +140,7 @@ python main.py
 ```
 
 
-### 📥 下載/瀏覽流程 (Server → Client)
+###  下載/瀏覽流程 (Server → Client)
 
 ```
 醫療人員工作站 (Client)              醫院伺服器 (Server)
