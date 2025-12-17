@@ -1,0 +1,51 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "filename": "video1111.mp4",
+      "local_filename": "3_20251218_034804.mp4",
+      "local_path": "medicalimages\\3_20251218_034804.mp4",
+      "patient_id": "3",
+      "patient_name": "陳建國",
+      "mrn": "MRN20240003",
+      "upload_time": "2025-12-18 03:48:04",
+      "uploaded_at": "2025-12-18T03:48:04.311113",
+      "timestamp": "20251218_034804",
+      "file_size": 19740343,
+      "status": "uploaded",
+      "updated_at": "2025-12-18T03:48:36.544858",
+      "source": "local"
+    },
+    {
+      "id": 2,
+      "filename": "00000001_002.png",
+      "local_filename": "3_20251218_035223.png",
+      "local_path": "medicalimages\\3_20251218_035223.png",
+      "patient_id": "3",
+      "patient_name": "陳建國",
+      "mrn": "MRN20240003",
+      "upload_time": "2025-12-18 03:52:23",
+      "uploaded_at": "2025-12-18T03:52:23.670210",
+      "timestamp": "20251218_035223",
+      "file_size": 351772,
+      "status": "uploaded",
+      "updated_at": "2025-12-18T03:52:28.266588",
+      "source": "local"
+    },
+    {
+      "id": 3,
+      "filename": "00000013_015.png",
+      "local_filename": "1_20251218_035542.png",
+      "local_path": "medicalimages\\1_20251218_035542.png",
+      "patient_id": "1",
+      "patient_name": "王大明",
+      "mrn": "MRN20240001",
+      "upload_time": "2025-12-18 03:55:42",
+      "uploaded_at": "2025-12-18T03:55:42.697913",
+      "timestamp": "20251218_035542",
+      "file_size": 409232,
+      "status": "uploaded",
+      "updated_at": "2025-12-18T03:55:47.474849"
+    }
+  ]
+}
